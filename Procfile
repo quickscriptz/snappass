@@ -1,1 +1,1 @@
-web: FLASK_APP=snappass/main.py python -m flask run
+web: gunicorn --pythonpath snappass main:app $PORT
